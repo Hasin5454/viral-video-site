@@ -1,1 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Viral Videos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/auth.css">
+</head>
+<body class="admin-page">
+    <header class="admin-header">
+        <div class="admin-logo">
+            <img src="assets/logo.png" alt="Admin Logo">
+            <h1>Admin Dashboard</h1>
+        </div>
+        <button id="logout-btn" class="btn btn-danger">Logout</button>
+    </header>
 
+    <div class="admin-container">
+        <section class="upload-section">
+            <h2>Upload New Video</h2>
+            <form id="upload-form">
+                <input type="file" id="video-upload" accept="video/*" required>
+                <button type="submit" class="btn btn-upload">Upload</button>
+                <p class="hint">Max 200MB file size</p>
+            </form>
+        </section>
+
+        <section class="credentials-section">
+            <h2>User Credentials</h2>
+            <div class="credentials-list" id="credentials-list">
+                <!-- Credentials will load here -->
+            </div>
+        </section>
+    </div>
+
+    <script src="js/admin.js"></script>
+</body>
+</html>
